@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\BiGon solution",
+    "\\BiGon solution\\bigOn.WebUI",
+    "\\BiGon solution\\bigOn.WebUI\\Models",
+    "\\BiGon solution\\bigOn.WebUI\\Models\\DataContexts"
+  ],
+  "SelectedNode": "\\BiGon solution\\bigOn.WebUI\\Models\\DataContexts\\BigOnDbContext.cs",
+  "PreviewInSolutionExplorer": false
+}
