@@ -1,13 +1,12 @@
 ﻿using bigOn.WebUI.AppCode.Infrastructure;
-using System.ComponentModel.DataAnnotations;
+using System.Collections.Generic;
 
 namespace bigOn.WebUI.Models.Entities
 {
-    public class ProductMaterial : BaseEntity
+    public class ProductMaterial:BaseEntity
     {
-        [Required]
         public string Name { get; set; }
-        
+        public virtual ICollection<ProductCatalogItem> ProductCatalog { get; set; }
 
     }
 }

@@ -29,6 +29,11 @@ namespace bigOn.WebUI
             {
                 cfg.UseSqlServer(configuration["ConnectionStrings:cString"]);
             });
+
+            services.AddRouting(cfg =>
+            {
+                cfg.LowercaseUrls=true;
+            });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -37,6 +42,9 @@ namespace bigOn.WebUI
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.SeedData();
+
             app.UseStaticFiles();
 
             app.UseRouting();

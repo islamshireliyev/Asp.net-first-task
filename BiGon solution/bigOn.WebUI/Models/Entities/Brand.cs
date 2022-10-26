@@ -1,13 +1,11 @@
 ﻿using bigOn.WebUI.AppCode.Infrastructure;
-using System.ComponentModel.DataAnnotations;
+using System.Collections.Generic;
 
 namespace bigOn.WebUI.Models.Entities
 {
     public class Brand : BaseEntity
     {
-        [Required]
         public string Name { get; set; }
-        
-
+        public virtual ICollection<Product> Products { get; set; }
     }
 }
